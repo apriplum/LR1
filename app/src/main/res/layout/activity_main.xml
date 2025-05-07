@@ -8,13 +8,38 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Beer Adviser"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/instruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select your preferred beer color:"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center_horizontal" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pngtree_cartoon_beer_mug_png_image_12908946"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp" />
     <Spinner
         android:id="@+id/beer_color"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="16dp"
-        android:entries="@array/beer_colors"/>
+        android:entries="@array/beer_colors"
+        android:minHeight="48dp" />
 
     <Button
         android:id="@+id/find_beer"
@@ -22,7 +47,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="16dp"
-        android:text="@string/find_beer" />
+        android:text="@string/find_beer"
+        android:backgroundTint="#FF5722"/>
 
     <TextView
         android:id="@+id/brands"
